@@ -26,6 +26,7 @@ before_build:
     - call "%VSCOMNTOOLS%\..\..\VC\vcvarsall.bat" %VCVARS_PLATFORM%
 
 build_script:
+  - cd lab1-1
   - mkdir build && cd build
   - cmake .. -G "NMake Makefiles"
   - nmake
